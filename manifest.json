@@ -8,5 +8,17 @@
       "scripts": ["background.js"]
     }
   },
-  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+  "icons": { "16": "focus-16.png", "128": "focus-128.png" },
+  "permissions": [
+    "background",
+    "geolocation",
+    "storage",
+	  "webview"
+  ],
+  "sockets": {
+    "udp": {
+      "send": ["*"],
+      "bind": ["*"]
+    }
+  }
 }
