@@ -13,7 +13,8 @@
     "background",
     "geolocation",
     "storage",
-	  "webview"
+	  "webview",
+    "fullscreen"
   ],
   "sockets": {
     "udp": {
