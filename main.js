@@ -27,7 +27,7 @@ chrome.sockets.udp.create({}, function(socketInfo) {
   // Setup event handler and bind socket.
   chrome.sockets.udp.onReceive.addListener(onReceive);
   chrome.sockets.udp.bind(socketId,
-    "127.0.0.1", 8899, function(result) {
+    "0.0.0.0", 60660, function(result) {
       if (result < 0) {
         console.log("Error binding socket.");
         return;
