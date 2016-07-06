@@ -18,7 +18,7 @@ var onReceive = function(info) {
   webview = document.getElementById('webview');
   if (info.socketId !== socketId)
     return;
-  webview.contentWindow.postMessage(ab2str(info.data), "*");
+  webview.contentWindow.postMessage({type:'nmeastream',data: ab2str(info.data)}, "*");
 };
 
 // Create the Socket
